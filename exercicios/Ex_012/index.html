@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: gray;
+        }
+        video{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+      <p>Este vídeo está hospedado no meu próprio servidor.</p>
+      <video src="midia/meu_video.mp4" controls></video>
+      <video controls poster="imagens/capa.png">
+        <source src="midia/meu_video.mp4" type="video/mp4">
+        <source src="midia/meu_video.m4v" type="video/mp4">
+      </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+      <iframe width="700" height="394" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=5LkxISrzK4x_DzRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    <h1>Inserindo vídeos do Vimeo</h1>  
+      <iframe src="https://player.vimeo.com/video/137613889?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="700" height="394" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="6LD - Commissioned Commercial"></iframe>     
+</body>
+</html>

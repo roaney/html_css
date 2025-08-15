@@ -1,0 +1,41 @@
+@charset "UTF-8";
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+body{
+    background-image: linear-gradient(180deg, rgb(126, 126, 253) 50%, rgb(93, 160, 93));
+    background-attachment: fixed; /*Fixação do fundo*/
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 1em;
+    /* Medidas Abolutas
+        cm, mm, in, px, pt, pc(paica) -> usar apenas px
+       Medidas Relativas
+        em, ex, rem, vw, vh, % -> usar apenas em
+      Geralmente 16px = 1em     
+    */
+    font-weight: normal; /* lighter, normal, bold, bolder */
+    font-style: normal;
+    text-decoration: none;
+    /* Shorthand font
+         font: font-style font-weight font-size font-family;
+         font: italic bold 1em Arial, Helvetica, sans-serif;
+    */       
+}
+main{
+    background-color: rgb(182, 182, 182);
+    width: 800px;
+    padding: 10px; /*Acolchoamento ou preenchimento*/
+    margin: auto;
+    border-radius: 20px; /*Raio da borda*/
+    box-shadow: 5px 5px 15px rgb(31, 31, 31);
+}
+h1{
+    color: rgb(41, 41, 255);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(31, 31, 31);
+}
+h2{
+    color: rgb(41, 41, 255);
+    text-align: left;
+}
