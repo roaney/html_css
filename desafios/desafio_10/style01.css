@@ -76,6 +76,7 @@ main p{
     text-align: justify;
     text-indent: 30px;
     line-height: 1.5em;
+    font-size: 1.1em;
 }
 main>h2{
     font-family: var(--fonte_idroid);
