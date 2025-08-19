@@ -4,9 +4,8 @@
     border-radius: 10px;
     width: 300px;
     height: 300px;
-    margin: auto;
     background-color: chartreuse;
-    margin-bottom: 10px;
+    display: inline-block;
 }
 #q1{
     background-color: aquamarine;
@@ -15,5 +14,5 @@
     background-image: linear-gradient(90deg, yellow, blue);
 }
 #q3{
-    
+    background-image: url(imagens/pattern003.png);
 }
