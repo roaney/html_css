@@ -8,12 +8,20 @@
     <style>
         body{
             margin: 0;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;*/
             height: 100vh;
+
+            /*
+                shorthand - background
+                color > image > repeat > attachment > position
+            */
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center;  
+            background-size: cover;
         }
         main{
             background-color: white;
