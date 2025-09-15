@@ -14,14 +14,14 @@
     <h1>
         Teste de Formulário
     </h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="usuario">Usuário:</label>
-            <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="20" size="40" placeholder="nome de usuário">
+            <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="20" size="40" placeholder="nome de usuário" autocomplete="username">
         </p>
         <p>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" size="20" placeholder="mínimo 8 letras">
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" size="20" placeholder="mínimo 8 letras" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
