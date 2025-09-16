@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .verde {
+            background-color: rgb(30, 255, 0);
+            border: 1px solid rgb(78, 78, 78);
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        fieldset {
+            margin-bottom: 10px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de Formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" value="#00ff00">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="verde">
+            <input type="reset" value="Limpar" class="verde">
+        </p>
+    </form>
+</body>
+</html>
