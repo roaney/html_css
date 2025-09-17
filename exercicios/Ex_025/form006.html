@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(90deg, rgb(182, 182, 182), rgb(70, 70, 70));
         }
         .verde {
             background-color: rgb(30, 255, 0);
@@ -15,8 +16,9 @@
             font-weight: bold;
         }
         fieldset {
-            margin-bottom: 10px;
             width: 400px;
+            border: 2px solid rgb(75, 75, 75);
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -24,15 +26,25 @@
     <h1>
         Exemplo de Formulário
     </h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="cor">Cor</label>
-            <input type="color" name="cor" id="cor" value="#00ff00">
-        </p>
-        <p>
-            <input type="submit" value="Enviar" class="verde">
-            <input type="reset" value="Limpar" class="verde">
-        </p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p>
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" value="#00ff00">
+            </p>
+            <p>
+                <label for="nivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="nivel" value="100">
+            </p>
+            <p>
+                <label for="foto">Foto de perfil</label>
+                <input type="file" name="foto" id="foto">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="verde">
+                <input type="reset" value="Limpar" class="verde">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
