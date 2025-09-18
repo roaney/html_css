@@ -16,6 +16,23 @@
     </h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
