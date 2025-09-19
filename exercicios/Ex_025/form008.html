@@ -8,6 +8,9 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        #idade {
+            color: rgb(255, 68, 0);
+        }
     </style>
 </head>
 <body>
@@ -30,8 +33,22 @@
         <p>
             <label for="num">Número</label>
             <input type="range" name="num" id="num" oninput="valor.innerHTML = Number(num.value)">
-            <output id="valor"></output>
+            <output id="valor">50</output>
         </p>
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2025" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade">0</output>
+        </p>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                idade.innerHTML = Number(atual) - Number(ano.value)
+            }
+        </script>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
