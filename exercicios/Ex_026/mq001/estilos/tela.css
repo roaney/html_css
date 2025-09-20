@@ -1,2 +1,27 @@
 @charset "UTF-8";
 /* Estilo para tela */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header {
+    background-color: lightcoral;
+}
+header > h1 {
+    text-align: center;
+}
+menu ul {
+    list-style-type: none;
+}
+menu li {
+    background-color: rgb(190, 33, 33);
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    margin: 0px 10px;
+    border-radius: 7px;
+}
