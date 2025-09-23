@@ -1,7 +1,21 @@
 @charset "UTF-8";
 /* Todas as demais mídias */
 @media print {
-
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessário */
+    }
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
@@ -24,5 +38,12 @@
     #tv { display: none; }
 }
 @media screen and (min-width: 1200px) {
-    
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
 }
