@@ -13,12 +13,14 @@
             display: flex;
             background-color: crimson;
             height: 300px;
-            flex-flow: column wrap;
+            flex-flow: row nowrap;
             justify-content: space-evenly;
             align-items: flex-start;
         }
         .item {
-            flex-basis: 100px;
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
@@ -32,9 +34,6 @@
         <div class="item">Exemplo de bloco B</div>
         <div class="item">Exemplo de bloco C</div>
         <div class="item">Exemplo de bloco D</div>
-        <div class="item">Exemplo de bloco E</div>
-        <div class="item">Exemplo de bloco F</div>
-        <div class="item">Exemplo de bloco G</div>
     </div>
 </body>
 </html>
