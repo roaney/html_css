@@ -19,6 +19,8 @@
         }
         .item {
             flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
@@ -28,10 +30,9 @@
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Exemplo de bloco A</div>
-        <div class="item">Exemplo de bloco B</div>
-        <div class="item">Exemplo de bloco C</div>
-        <div class="item">Exemplo de bloco D</div>
+        <div class="item" style="flex-grow: 1;">Exemplo de bloco A</div>
+        <div class="item" style="flex-grow: 2;">Exemplo de bloco B</div>
+        <div class="item" style="flex-grow: 5;">Exemplo de bloco C</div>
     </div>
 </body>
 </html>
