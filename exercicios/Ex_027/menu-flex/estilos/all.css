@@ -24,15 +24,18 @@ h1 {
     font-variant: small-caps;
     padding: 10px;
 }
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
 nav a {
-    display: block;
+    flex: 0 1 200px;
+    margin-bottom: 5px;
     color: var(--corheader);
     text-decoration: none;
     padding: 5px;
-    width: 25%;
     background-color: var(--corbody);
-    margin: auto;
-    margin-bottom: 3px;
     border-radius: 7px;
     transition: all 0.5s 0.2s;
 }
