@@ -13,7 +13,6 @@ header, main, footer {
 }
 h1, h2 {
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 p {
     text-align: justify;
@@ -22,6 +21,7 @@ p {
 }
 main {
     background-color: rgb(172, 172, 172);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-flow: column nowrap;
 }
