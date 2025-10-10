@@ -1,0 +1,37 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(133, 113, 173);
+}
+header, footer {
+    padding: 15px;
+}
+header h1, footer h2 {
+    margin-bottom: 10px;
+}
+header p, footer p {
+    text-align: justify;
+}
+main {
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+section {
+    display: flex;
+    flex-flow: row nowrap;
+}
+img {
+    width: 320px;
+    height: 213px;
+}
+video {
+    width: 531px;
+    height: 300px;
+}
