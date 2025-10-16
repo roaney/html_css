@@ -11,12 +11,12 @@
         }
         .conteiner {
             border: 3px solid blue;
-            height: px;
+            height: 300px;
             display: grid;
-            grid-template: repeat(3, 100px) / 100px 1fr 20% 2fr;
+            grid-template: repeat(2, 1fr) 2fr / 100px 1fr 20% 2fr;
             gap: 20px;
-            place-items: center stretch;
-            place-content: start stretch;
+            place-items: stretch stretch;
+            place-content: start start;
             grid-auto-rows: 100px;
             grid-auto-columns: 200px;
         }
